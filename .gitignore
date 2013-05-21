@@ -1,3 +1,4 @@
+subscribem.gemspec
 .bundle/
 log/*.log
 pkg/
