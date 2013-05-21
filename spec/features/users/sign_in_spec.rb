@@ -9,9 +9,9 @@ feature 'User sign in' do
     scenario "signs in as an account owner successfully" do
       visit subscribem.root_path
       page.current_url.should == sign_in_url
-      fill_in "Email", :with => account.owner.email
+      fill_in "E-mail", :with => account.owner.email
       fill_in "Password", :with => "password"
-      click_button "Sign in"
+      click_button "Sign In"
       page.should have_content("You are now signed in.")
       page.current_url.should == root_url
     end
